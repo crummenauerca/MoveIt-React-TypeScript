@@ -11,9 +11,11 @@ export function Button(props: ButtonProps) {
     function increment() {
         setCounter(counter + 1)
     }
-    
+
     return (
-        <button type="button" style={{ color: props.color }} onClick={increment}>
+        <button type="button"
+            style={{ color: props.color, height: '2rem' }}
+            onClick={increment}>
             {props.children} <strong>{counter}</strong>
         </button>
     )
